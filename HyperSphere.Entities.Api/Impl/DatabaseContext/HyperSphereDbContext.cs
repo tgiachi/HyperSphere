@@ -1,4 +1,4 @@
-﻿using System.Data.Entity;
+﻿using Microsoft.EntityFrameworkCore;
 
 namespace HyperSphere.Entities.Api.Impl.DatabaseContext
 {

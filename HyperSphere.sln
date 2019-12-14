@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29519.87
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HyperSphere.Entities.Api", "HyperSphere.Entities.Api\HyperSphere.Entities.Api.csproj", "{9CB9D4A7-7D36-40C6-A730-2B9491E12124}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HyperSphere.Entities.Api", "HyperSphere.Entities.Api\HyperSphere.Entities.Api.csproj", "{C6CC382C-D061-4580-9A99-F99ECD751264}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{9CB9D4A7-7D36-40C6-A730-2B9491E12124}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9CB9D4A7-7D36-40C6-A730-2B9491E12124}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9CB9D4A7-7D36-40C6-A730-2B9491E12124}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9CB9D4A7-7D36-40C6-A730-2B9491E12124}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C6CC382C-D061-4580-9A99-F99ECD751264}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6CC382C-D061-4580-9A99-F99ECD751264}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6CC382C-D061-4580-9A99-F99ECD751264}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6CC382C-D061-4580-9A99-F99ECD751264}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
