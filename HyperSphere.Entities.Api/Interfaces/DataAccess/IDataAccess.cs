@@ -1,11 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
+using HyperSphere.Entities.Api.Data;
 using HyperSphere.Entities.Api.Interfaces.Entities;
 
 namespace HyperSphere.Entities.Api.Interfaces.DataAccess
 {
-    public interface IDataAccess<TEntity> where TEntity : IEntity
+    public interface IDataAccess<TEntity> where TEntity : class, IEntity
     {
         long Count();
         Task<long> CountAsync();
@@ -29,5 +31,7 @@ namespace HyperSphere.Entities.Api.Interfaces.DataAccess
         bool Delete(TEntity entity);
 
         List<TEntity> Query(Func<TEntity, bool> query);
+
+        PagedEntityResult<TEntity> PagedQuery(int pageSize, int pageNum,IQueryable<TEntity> query);
     }
 }

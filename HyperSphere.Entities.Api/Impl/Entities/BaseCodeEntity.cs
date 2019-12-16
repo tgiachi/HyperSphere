@@ -7,5 +7,11 @@ namespace HyperSphere.Entities.Api.Impl.Entities
     {
         [MaxLength(10)]
         public string Code { get; set; }
+
+
+        public override string ToString()
+        {
+            return $"{Id} - {Code}";
+        }
     }
 }

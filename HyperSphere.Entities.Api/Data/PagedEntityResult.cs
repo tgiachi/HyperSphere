@@ -9,6 +9,8 @@ namespace HyperSphere.Entities.Api.Data
     {
         public List<TEntity> Result { get; set; }
 
+        public int Count { get; set; }
+
         public int PageNum { get; set; }
 
         public int PageSize { get; set; }
