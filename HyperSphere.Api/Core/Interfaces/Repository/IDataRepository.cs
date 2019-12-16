@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using HyperSphere.Api.Core.Interfaces.Entities;
+using System;
 using System.Collections.ObjectModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using HyperSphere.Entities.Api.Interfaces.Entities;
 
-namespace HyperSphere.Entities.Api.Interfaces.Repository
+namespace HyperSphere.Api.Core.Interfaces.Repository
 {
     public interface IDataRepository<TEntity> where TEntity : IEntity
     {

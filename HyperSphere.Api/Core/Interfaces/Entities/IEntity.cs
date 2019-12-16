@@ -1,7 +1,7 @@
 ﻿using System;
 using System.ComponentModel;
 
-namespace HyperSphere.Entities.Api.Interfaces.Entities
+namespace HyperSphere.Api.Core.Interfaces.Entities
 {
     public interface IEntity : INotifyPropertyChanged
     {

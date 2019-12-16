@@ -1,4 +1,4 @@
-﻿namespace HyperSphere.Entities.Api.Interfaces.Entities
+﻿namespace HyperSphere.Api.Core.Interfaces.Entities
 {
     public interface ICodeEntity : IEntity
     {

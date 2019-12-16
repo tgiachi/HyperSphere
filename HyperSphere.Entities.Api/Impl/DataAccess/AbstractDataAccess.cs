@@ -1,14 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using HyperSphere.Entities.Api.Data;
+﻿using HyperSphere.Api.Core.Data.Entities;
+using HyperSphere.Api.Core.Interfaces.DataAccess;
+using HyperSphere.Api.Core.Interfaces.Entities;
 using HyperSphere.Entities.Api.Impl.DatabaseContext;
-using HyperSphere.Entities.Api.Interfaces.DataAccess;
-using HyperSphere.Entities.Api.Interfaces.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 using Z.EntityFramework.Plus;
 
 namespace HyperSphere.Entities.Api.Impl.DataAccess
@@ -17,12 +16,12 @@ namespace HyperSphere.Entities.Api.Impl.DataAccess
     {
 
         private readonly ILogger<IDataAccess<TEntity>> _logger;
-        private readonly HyperSphereDbContext _dbContext;
+        private readonly DbContext _dbContext;
         private readonly DbSet<TEntity> _dbSet;
 
-        public AbstractDataAccess(HyperSphereDbContext dbContext, ILogger<IDataAccess<TEntity>> logger)
+        public AbstractDataAccess(DbContext dbContext, ILogger<IDataAccess<TEntity>> logger)
         {
-          
+
             _logger = logger;
             _dbContext = dbContext;
             _dbSet = _dbContext.Set<TEntity>();
@@ -66,7 +65,7 @@ namespace HyperSphere.Entities.Api.Impl.DataAccess
             return items;
         }
 
-       
+
 
         public async Task<List<TEntity>> FindAllAsync()
         {

@@ -1,11 +1,11 @@
-﻿using System;
+﻿using HyperSphere.Api.Core.Data.Entities;
+using HyperSphere.Api.Core.Interfaces.Entities;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using HyperSphere.Entities.Api.Data;
-using HyperSphere.Entities.Api.Interfaces.Entities;
 
-namespace HyperSphere.Entities.Api.Interfaces.DataAccess
+namespace HyperSphere.Api.Core.Interfaces.DataAccess
 {
     public interface IDataAccess<TEntity> where TEntity : class, IEntity
     {
@@ -32,6 +32,6 @@ namespace HyperSphere.Entities.Api.Interfaces.DataAccess
 
         List<TEntity> Query(Func<TEntity, bool> query);
 
-        PagedEntityResult<TEntity> PagedQuery(int pageSize, int pageNum,IQueryable<TEntity> query);
+        PagedEntityResult<TEntity> PagedQuery(int pageSize, int pageNum, IQueryable<TEntity> query);
     }
 }

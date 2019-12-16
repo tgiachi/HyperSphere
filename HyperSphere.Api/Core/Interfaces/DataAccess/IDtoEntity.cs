@@ -1,8 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
-namespace HyperSphere.Entities.Api.Dto
+namespace HyperSphere.Api.Core.Interfaces.DataAccess
 {
     public interface IDtoEntity
     {

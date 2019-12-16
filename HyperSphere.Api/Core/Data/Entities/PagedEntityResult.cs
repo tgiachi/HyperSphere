@@ -1,9 +1,7 @@
-﻿using System;
+﻿using HyperSphere.Api.Core.Interfaces.Entities;
 using System.Collections.Generic;
-using System.Text;
-using HyperSphere.Entities.Api.Interfaces.Entities;
 
-namespace HyperSphere.Entities.Api.Data
+namespace HyperSphere.Api.Core.Data.Entities
 {
     public class PagedEntityResult<TEntity> where TEntity : IEntity
     {

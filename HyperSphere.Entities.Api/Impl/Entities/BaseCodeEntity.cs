@@ -1,5 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
-using HyperSphere.Entities.Api.Interfaces.Entities;
+﻿using HyperSphere.Api.Core.Interfaces.Entities;
+using System.ComponentModel.DataAnnotations;
 
 namespace HyperSphere.Entities.Api.Impl.Entities
 {
