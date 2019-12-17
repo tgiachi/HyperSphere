@@ -83,6 +83,7 @@ namespace HyperSphere.Entities.Api.Impl.DataAccess
         {
             var entityState = _dbContext.Add(entity);
 
+            
             _dbContext.SaveChanges();
 
             return entity;

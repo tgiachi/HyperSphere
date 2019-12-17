@@ -41,6 +41,8 @@ namespace HyperSphere.Web.Test.App
 
             services.AddOptions();
             services.AddControllers();
+
+            services.AddSwaggerDocument();
         }
 
 
@@ -79,6 +81,9 @@ namespace HyperSphere.Web.Test.App
             app.UseRouting();
 
             app.UseAuthorization();
+
+            app.UseOpenApi();
+            app.UseSwaggerUi3();
 
             app.UseEndpoints(endpoints =>
             {
